@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <style>
+    html {
+      font-family: monospace;
+    }
+    #nav-bar {
+      width: 100%;
+      background-color: black;
+      display: grid;
+      gap: 10px 10px;
+      grid-template-columns: auto auto auto;
+      justify-content: end;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    a.nav-link {
+      color: white;
+      padding: 10px;
+    }
+    #form {
+      display: flex;
+      flex-direction: column;
+    }
+    @media (max-width: 600px) {
+      #nav-bar {
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto;
+        gap: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#feature-a" class="nav-link">Feature A</a>
+      <a href="#feature-b" class="nav-link">Feature B</a>
+    </nav>
+    <img src="https://" alt="logo" id="header-img">
+  </header>
+  <main>
+    <div id="home">
+      <h1>Home</h1>
+      <video id="video" src=""></video>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" required placeholder="Your Name" name="name">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" required placeholder="Your Email" name="email">
+
+        <div>
+          <textarea name="" id="" cols="30" rows="10">Additional comments</textarea>
+        </div>
+
+        <input type="submit" id="submit">
+      </form>
+    </div>
+    <div id="feature-a">
+      <h1>Feature A</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas delectus exercitationem corporis tempore eaque aspernatur impedit voluptatem architecto quasi iste? Recusandae tenetur libero ipsum dolore dolor voluptate quaerat inventore iste?
+      </p>
+    </div>
+    <div id="feature-b">
+      <h1>Feature B</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas delectus exercitationem corporis tempore eaque aspernatur impedit voluptatem architecto quasi iste? Recusandae tenetur libero ipsum dolore dolor voluptate quaerat inventore iste?
+      </p>
+    </div>
+  </main>
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
