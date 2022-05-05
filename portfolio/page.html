@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Page</title>
+  <style>
+    html {
+      font-family: monospace;
+    }
+    body {
+      margin: 0;
+    }
+    #navbar {
+      width: 100%;
+      background-color: black;
+      display: grid;
+      gap: 10px 10px;
+      grid-template-columns: auto auto auto;
+      justify-content: end;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    a.nav-link {
+      color: white;
+      padding: 10px;
+    }
+    main {
+      position: relative;
+      top: 35px;
+    }
+    #welcome-section {
+      height: 100vh;
+    }
+    @media (max-width: 600px) {
+      #navbar {
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto;
+        gap: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <nav id="navbar">
+      <a href="#welcome-section" class="nav-link">Home</a>
+      <a href="#projects" class="nav-link">Feature A</a>
+    </nav>
+  </header>
+  <main>
+    <section id="welcome-section">
+      <h1>Hello World</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatum asperiores totam, repellendus officiis, quas provident rerum facere necessitatibus laboriosam culpa. Neque doloremque hic fuga rerum error! Omnis, odit similique.</p>
+    </section>
+    <section id="projects">
+      <h1>Projects</h1>
+      <div class="project-tile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus mollitia dolorem nobis id culpa, doloremque praesentium adipisci consectetur deserunt tempore labore, aliquid a vel omnis eligendi placeat sequi ipsum recusandae?</div>
+      <a id="profile-link" href="https://raw.githubusercontent.com/randyjap/fcc/main/portfolio/page.html" target="_blank">See more</a>
+    </section>
+  </main>
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
